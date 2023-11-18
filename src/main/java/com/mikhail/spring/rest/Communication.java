@@ -6,7 +6,6 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
@@ -19,7 +18,6 @@ public class Communication {
 
     private final String URL = "http://localhost:8080/spring_course_rest/api/employees";
 
-    @GetMapping
     public List<Employee> getEmployees() {
 
         // ResponseEntity обертка над HttpResponse
